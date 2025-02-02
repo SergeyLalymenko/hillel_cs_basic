@@ -1,6 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-Console.WriteLine("Enter number 1:");
+﻿Console.WriteLine("Enter number 1:");
 string input1 = Console.ReadLine();
 Console.WriteLine("Enter number 2:");
 string input2 = Console.ReadLine();
