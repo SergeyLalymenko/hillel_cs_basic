@@ -20,18 +20,18 @@
 
 // 2. Ви розробляєте програму для генерації текстового звіту. Ваше завдання - створити текстовий звіт, який містить заголовок, дату та список подій. Використайте StringBuilder, щоб зберегти пам’ять та оптимізувати об’єднання рядків. Користувач у циклi буде вводити подiї, треба додавати їх у загальний список подiй типу StringBuilder.
 
-using System.Text;
+//using System.Text;
 
-StringBuilder report = new StringBuilder();
-string[] fields = ["title", "date", "description"];
+//StringBuilder report = new StringBuilder();
+//string[] fields = ["title", "date", "description"];
 
-for (int i = 0; i < fields.Length; i++)
-{
-    Console.WriteLine($"Enter {fields[i]}:");
-    report.AppendLine($"{fields[i]}: {Console.ReadLine()}");
-}
+//for (int i = 0; i < fields.Length; i++)
+//{
+//    Console.WriteLine($"Enter {fields[i]}:");
+//    report.AppendLine($"{fields[i]}: {Console.ReadLine()}");
+//}
 
-Console.WriteLine(report);
+//Console.WriteLine(report);
 
 // 3. Ви отримали рядок, який містить декілька слів, розділених комами. Ваша мета - видалити всі пробіли з цього рядка та вивести результат.
 
