@@ -3,12 +3,12 @@
     class Potato : Product
     {
         private readonly int _count;
-        public Potato(double basePrice, int count) : base("Potato", basePrice)
+        public Potato(double basePrice, int count) : base(basePrice)
         {
             _count = count;
         }
 
-        public int Count
+        private int Count
         {
             get { return _count; }
         }
@@ -20,7 +20,7 @@
 
         public override void PrintProductInfo()
         {
-            Console.WriteLine($"Product: {Name}, Price: {BasePrice}, Count: {Count}, totalPrice: {GetPrice()}");
+            Console.WriteLine($"Product: {GetType().Name}, Price: {BasePrice}, Count: {Count}, totalPrice: {GetPrice()}");
         }
     }
 }

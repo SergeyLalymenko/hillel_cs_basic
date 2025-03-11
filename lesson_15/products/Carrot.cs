@@ -2,6 +2,6 @@
 {
     class Carrot : Product
     {
-        public Carrot(double basePrice) : base("Carrot", basePrice) { }
+        public Carrot(double basePrice) : base(basePrice) { }
     }
 }

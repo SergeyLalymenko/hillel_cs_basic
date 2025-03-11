@@ -4,7 +4,7 @@
     {
         private readonly List<Product> _products = [];
 
-        public List<Product> Products
+        private List<Product> Products
         {
             get { return _products; }
         }
@@ -22,14 +22,12 @@
                 return;
             }
 
-            double totalPrice = 0;
-
             foreach (Product product in Products)
             {
-                double price = product.GetPrice();
-                totalPrice += price;
                 product.PrintProductInfo();
             }
+
+            double totalPrice = Products.Sum((product) => product.GetPrice());
 
             Console.WriteLine($"Total products price: {totalPrice}");
         }

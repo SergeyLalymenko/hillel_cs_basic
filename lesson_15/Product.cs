@@ -2,21 +2,14 @@
 {
     class Product
     {
-        private readonly string _name;
         private readonly double _basePrice;
 
-        public Product(string name, double basePrice)
+        public Product(double basePrice)
         {
-            _name = name;
             _basePrice = basePrice;
         }
 
-        public string Name
-        {
-            get { return _name; }
-        }
-
-        public double BasePrice
+        protected double BasePrice
         {
             get { return _basePrice; }
         }
@@ -28,7 +21,7 @@
 
         public virtual void PrintProductInfo()
         {
-            Console.WriteLine($"Product: {Name}, Price: {GetPrice()}");
+            Console.WriteLine($"Product: {GetType().Name}, Price: {GetPrice()}");
         }
     }
 }
